@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+#leadBlock{
+	height:460px;
+}
+#leadBlock h2 {
+	width: 314px;
+	height: 139px;
+	background: url(../images/pageTtl/ttl_access.png) 0 0 no-repeat;
+	left:20px;
+	margin-top:120px;
+}
+#bottomMenu{
+	height:1694px
+}
+#bottomMenu #access {
+	position:relative;
+	height:1694px;
+	background:url(../images/mapBg.jpg) 0 0 no-repeat #0c0c0c;
+}
+#pos1{
+	position:absolute;
+	width:800px;
+	height:600px;
+	background:url(../images/tenpomap.png) 0 0 no-repeat;
+	top:90px;
+	left:80px
+}
+#pos1:hover{
+	background:url(../images/tenpomap.gif) 0 0 no-repeat;
+}
+#pos2,
+#pos3,
+#pos4,
+#pos5{
+	width:921px;
+	height:221px;
+}
+#pos2{
+	position:absolute;
+	top:733px;
+	left:20px;
+	background:url(../images/map_zep.jpg) 0 0 no-repeat;
+}
+#pos3{
+	position:absolute;
+	top:970px;
+	left:20px;
+	background:url(../images/map_street.jpg) 0 0 no-repeat;
+}
+#pos4{
+	position:absolute;
+	top:1207px;
+	left:20px;
+	background:url(../images/map_yokohama.jpg) 0 0 no-repeat;
+}
+#pos5{
+	position:absolute;
+	top:1445px;
+	left:20px;
+	background:url(../images/map_deep.jpg) 0 0 no-repeat;
+}
+.adj{
+	position:absolute;
+	top:10px;
+	right:10px;
+}

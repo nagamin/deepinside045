@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+#leadBlock{
+	height:460px;
+}
+#leadBlock h2 {
+	width: 582px;
+	height: 139px;
+	background: url(../images/pageTtl/ttl_media.png) 0 0 no-repeat;
+	left:20px;
+	margin-top:120px;
+}
+#bottomMenu{
+	height:1000px;
+	background:#000;
+}
+#bottomMenu #mediaSlider{
+	width:930px;
+	margin:0 auto 0;
+	position:relative;
+	background:#000;
+}
+#bottomMenu #mediaSlider div.bx-wrapper{
+	margin:0 auto;
+}
+#bottomMenu #mediaSlider ul{
+	width:778px;
+	margin:10px auto;
+	overflow:hidden;
+}
+#bottomMenu #mediaSlider ul li{
+	overflow:hidden;
+}
+#bottomMenu #mediaSlider ul li p{
+	float:left;
+	margin-right:5px;
+	margin-bottom:5px;
+}
+#bottomMenu #mediaSlider a.bx-prev,
+#bottomMenu #mediaSlider a.bx-next{
+	text-indent:-9999px;
+	width:31px;
+	height:31px;
+	display:block;
+	position:absolute;
+	top:180px;
+}
+/*#bottomMenu #mediaSlider a.bx-prev{ 
+	background:url(../images/iconArrowLeft.png) 0 0 no-repeat;
+	left:-55px;
+}
+#bottomMenu #mediaSlider a.bx-next{ 
+	background:url(../images/iconArrowRight.png) 0 0 no-repeat;
+	right:-40px;
+}
+#bottomMenu #mediaSlider a.bx-prev:hover,
+#bottomMenu #mediaSlider a.bx-next:hover{
+	background-position:-0 -31px
+}*/
+
+@import "_cluetip";

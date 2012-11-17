@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja-JP" xml:lang="ja-JP">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="keywords" content="横浜スタイル　DEEPINSIDE ディープインサイド バイク" />
+<meta name="description" content="横浜スタイル☆トータルプロデュース！元祖横浜スタイルはお任せください。" />
+<title>横浜スタイル | DEEPINSIDE mc045</title>
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<link rel="stylesheet" href="css/shop.css" type="text/css" />
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" />
+<link rel="stylesheet" href="css/streetGallery.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/crossSlide.js"></script>
+<script type="text/javascript" src="js/cycle.js"></script>
+<script type="text/javascript" src="js/expander.js"></script>
+<script type="text/javascript" src="js/bxSlider.js"></script>
+
+<script type="text/javascript" src="js/jquery.lightbox.js"></script>
+<script>
+
+$(function(){
+	
+	var array = [];
+	$("#movieSlider img").each(function(){
+		var a = $(this).attr("src");
+		a = a.replace("images/gallery/gallery_","");
+		a = a.replace("s.jpg","");
+		array.push(a);
+	});
+	array.sort(function (a, b){return a - b;}).reverse();
+	
+	$("#movieSlider").html("").prepend('<ul id="movieSlideCont">')
+	
+	for( var i = 0; i < Math.ceil(array.length / 35); i++){
+		
+		var cnt = i * 35;
+		
+		$("#movieSlideCont").append('<li class="block_'+ i +'">');
+		
+  	for( var y = cnt; y < (cnt + 35 -0); y++){
+			var cont = '<a href="images/gallery/gallery_'+  array[y] +'.jpg"><img src="images/gallery/gallery_'+ array[y] +'s.jpg" /></a>';
+			if(array[y]) $("#movieSlideCont li.block_" + i).append(cont);
+		}
+	}
+	
+	$('#movieSlideCont li a').lightBox({fixedNavigation:true});
+})
+</script>
+<script type="text/javascript" src="js/shop.js"></script>
+</head>
+<body>
+
+	<div id="container">
+  	<?php require("./module/header.html"); ?>
+    
+    <div id="wrapper">
+    	<div id="mask">
+      	<img src="images/mask.png" width="1280" height="635" alt="mask" />
+      </div>
+      
+      <?php require("./module/key_visual_street.html"); ?>
+      
+    	<div id="main" class="street">
+      	<?php require("./module/lead_block_default.html"); ?>
+        
+        <div id="bottomMenu">
+        	<div id="navWrap">
+          	<dl>
+            	<dt>DEEP☆INSIDE .Street</dd>
+            	<dd class="nav1"><a href="street.html">Home</a></dd>
+              <dd class="nav2"><a href="http://www.goobike.com/shop/client_8502515/showroom.html" target="_blank">Showroom</a></dd>
+              <dd class="nav3"><a href="javascript:void(0)" class="current">PhotoGallery</a></dd>
+              <dd class="nav4"><a href="street_custom.html">Custom</a></dd>
+              <dd class="nav5"><a href="street_dressy_big.html">Dressy☆Big</a></dd>
+            </dl><!-- /#nav -->
+          </div><!-- /#navWrap -->
+          
+          <div id="streetMovie2">
+            <div id="movieSlider">
+            	
+                  <a href="images/gallery/gallery_178.jpg"><img src="images/gallery/gallery_178s.jpg" /></a>
+                  <a href="images/gallery/gallery_179.jpg"><img src="images/gallery/gallery_179s.jpg" /></a>
+                  <a href="images/gallery/gallery_180.jpg"><img src="images/gallery/gallery_180s.jpg" /></a>
+                  <a href="images/gallery/gallery_181.jpg"><img src="images/gallery/gallery_181s.jpg" /></a>
+                  <a href="images/gallery/gallery_182.jpg"><img src="images/gallery/gallery_182s.jpg" /></a>
+                  <a href="images/gallery/gallery_183.jpg"><img src="images/gallery/gallery_183s.jpg" /></a>
+                  <a href="images/gallery/gallery_184.jpg"><img src="images/gallery/gallery_184s.jpg" /></a>
+                  <a href="images/gallery/gallery_185.jpg"><img src="images/gallery/gallery_185s.jpg" /></a>
+                  <a href="images/gallery/gallery_186.jpg"><img src="images/gallery/gallery_186s.jpg" /></a>
+                  <a href="images/gallery/gallery_187.jpg"><img src="images/gallery/gallery_187s.jpg" /></a>
+                  <a href="images/gallery/gallery_188.jpg"><img src="images/gallery/gallery_188s.jpg" /></a>
+                  <a href="images/gallery/gallery_189.jpg"><img src="images/gallery/gallery_189s.jpg" /></a>
+                  <a href="images/gallery/gallery_190.jpg"><img src="images/gallery/gallery_190s.jpg" /></a>
+                  <a href="images/gallery/gallery_191.jpg"><img src="images/gallery/gallery_191s.jpg" /></a>
+                  <a href="images/gallery/gallery_192.jpg"><img src="images/gallery/gallery_192s.jpg" /></a>
+                  <a href="images/gallery/gallery_193.jpg"><img src="images/gallery/gallery_193s.jpg" /></a>
+                  <a href="images/gallery/gallery_194.jpg"><img src="images/gallery/gallery_194s.jpg" /></a>
+                  <a href="images/gallery/gallery_195.jpg"><img src="images/gallery/gallery_195s.jpg" /></a>
+                  <a href="images/gallery/gallery_196.jpg"><img src="images/gallery/gallery_196s.jpg" /></a>
+                  <a href="images/gallery/gallery_197.jpg"><img src="images/gallery/gallery_197s.jpg" /></a>
+                  <a href="images/gallery/gallery_198.jpg"><img src="images/gallery/gallery_198s.jpg" /></a>
+                  <a href="images/gallery/gallery_199.jpg"><img src="images/gallery/gallery_199s.jpg" /></a>
+                  <a href="images/gallery/gallery_200.jpg"><img src="images/gallery/gallery_200s.jpg" /></a>
+                  <a href="images/gallery/gallery_201.jpg"><img src="images/gallery/gallery_201s.jpg" /></a>
+                  <a href="images/gallery/gallery_202.jpg"><img src="images/gallery/gallery_202s.jpg" /></a>
+                  <a href="images/gallery/gallery_203.jpg"><img src="images/gallery/gallery_203s.jpg" /></a>
+                  <a href="images/gallery/gallery_204.jpg"><img src="images/gallery/gallery_204s.jpg" /></a>
+                  <a href="images/gallery/gallery_205.jpg"><img src="images/gallery/gallery_205s.jpg" /></a>
+                  <a href="images/gallery/gallery_206.jpg"><img src="images/gallery/gallery_206s.jpg" /></a>
+                  <a href="images/gallery/gallery_143.jpg"><img src="images/gallery/gallery_143s.jpg" /></a>
+                  <a href="images/gallery/gallery_144.jpg"><img src="images/gallery/gallery_144s.jpg" /></a>
+                  <a href="images/gallery/gallery_145.jpg"><img src="images/gallery/gallery_145s.jpg" /></a>
+                  <a href="images/gallery/gallery_146.jpg"><img src="images/gallery/gallery_146s.jpg" /></a>
+                  <a href="images/gallery/gallery_147.jpg"><img src="images/gallery/gallery_147s.jpg" /></a>
+                  <a href="images/gallery/gallery_148.jpg"><img src="images/gallery/gallery_148s.jpg" /></a>
+                
+                  
+                  <a href="images/gallery/gallery_149.jpg"><img src="images/gallery/gallery_149s.jpg" /></a>
+                  <a href="images/gallery/gallery_150.jpg"><img src="images/gallery/gallery_150s.jpg" /></a>
+                  <a href="images/gallery/gallery_151.jpg"><img src="images/gallery/gallery_151s.jpg" /></a>
+                  <a href="images/gallery/gallery_152.jpg"><img src="images/gallery/gallery_152s.jpg" /></a>
+                  <a href="images/gallery/gallery_153.jpg"><img src="images/gallery/gallery_153s.jpg" /></a>
+                  <a href="images/gallery/gallery_154.jpg"><img src="images/gallery/gallery_154s.jpg" /></a>
+                  <a href="images/gallery/gallery_155.jpg"><img src="images/gallery/gallery_155s.jpg" /></a>
+                  <a href="images/gallery/gallery_156.jpg"><img src="images/gallery/gallery_156s.jpg" /></a>
+                  <a href="images/gallery/gallery_157.jpg"><img src="images/gallery/gallery_157s.jpg" /></a>
+                  <a href="images/gallery/gallery_158.jpg"><img src="images/gallery/gallery_158s.jpg" /></a>
+                  <a href="images/gallery/gallery_159.jpg"><img src="images/gallery/gallery_159s.jpg" /></a>
+                  <a href="images/gallery/gallery_160.jpg"><img src="images/gallery/gallery_160s.jpg" /></a>
+                  <a href="images/gallery/gallery_161.jpg"><img src="images/gallery/gallery_161s.jpg" /></a>
+                  <a href="images/gallery/gallery_162.jpg"><img src="images/gallery/gallery_162s.jpg" /></a>
+                  <a href="images/gallery/gallery_163.jpg"><img src="images/gallery/gallery_163s.jpg" /></a>
+                  <a href="images/gallery/gallery_164.jpg"><img src="images/gallery/gallery_164s.jpg" /></a>
+                  <a href="images/gallery/gallery_165.jpg"><img src="images/gallery/gallery_165s.jpg" /></a>
+                  <a href="images/gallery/gallery_166.jpg"><img src="images/gallery/gallery_166s.jpg" /></a>
+                  <a href="images/gallery/gallery_167.jpg"><img src="images/gallery/gallery_167s.jpg" /></a>
+                  <a href="images/gallery/gallery_168.jpg"><img src="images/gallery/gallery_168s.jpg" /></a>
+                  <a href="images/gallery/gallery_169.jpg"><img src="images/gallery/gallery_169s.jpg" /></a>
+                  <a href="images/gallery/gallery_170.jpg"><img src="images/gallery/gallery_170s.jpg" /></a>
+                  <a href="images/gallery/gallery_171.jpg"><img src="images/gallery/gallery_171s.jpg" /></a>
+                  <a href="images/gallery/gallery_172.jpg"><img src="images/gallery/gallery_172s.jpg" /></a>
+                  <a href="images/gallery/gallery_173.jpg"><img src="images/gallery/gallery_173s.jpg" /></a>
+                  <a href="images/gallery/gallery_174.jpg"><img src="images/gallery/gallery_174s.jpg" /></a>
+                  <a href="images/gallery/gallery_175.jpg"><img src="images/gallery/gallery_175s.jpg" /></a>
+                  <a href="images/gallery/gallery_176.jpg"><img src="images/gallery/gallery_176s.jpg" /></a>
+                  <a href="images/gallery/gallery_177.jpg"><img src="images/gallery/gallery_177s.jpg" /></a>
+                  <a href="images/gallery/gallery_109.jpg"><img src="images/gallery/gallery_109s.jpg" /></a>
+                  <a href="images/gallery/gallery_110.jpg"><img src="images/gallery/gallery_110s.jpg" /></a>
+                  <a href="images/gallery/gallery_111.jpg"><img src="images/gallery/gallery_111s.jpg" /></a>
+                  <a href="images/gallery/gallery_112.jpg"><img src="images/gallery/gallery_112s.jpg" /></a>
+                  <a href="images/gallery/gallery_113.jpg"><img src="images/gallery/gallery_113s.jpg" /></a>
+                  <a href="images/gallery/gallery_114.jpg"><img src="images/gallery/gallery_114s.jpg" /></a>
+                
+                  
+                  <a href="images/gallery/gallery_115.jpg"><img src="images/gallery/gallery_115s.jpg" /></a>
+                  <a href="images/gallery/gallery_116.jpg"><img src="images/gallery/gallery_116s.jpg" /></a>
+                  <a href="images/gallery/gallery_117.jpg"><img src="images/gallery/gallery_117s.jpg" /></a>
+                  <a href="images/gallery/gallery_118.jpg"><img src="images/gallery/gallery_118s.jpg" /></a>
+                  <a href="images/gallery/gallery_119.jpg"><img src="images/gallery/gallery_119s.jpg" /></a>
+                  <a href="images/gallery/gallery_120.jpg"><img src="images/gallery/gallery_120s.jpg" /></a>
+                  <a href="images/gallery/gallery_121.jpg"><img src="images/gallery/gallery_121s.jpg" /></a>
+                  <a href="images/gallery/gallery_122.jpg"><img src="images/gallery/gallery_122s.jpg" /></a>
+                  <a href="images/gallery/gallery_123.jpg"><img src="images/gallery/gallery_123s.jpg" /></a>
+                  <a href="images/gallery/gallery_124.jpg"><img src="images/gallery/gallery_124s.jpg" /></a>
+                  <a href="images/gallery/gallery_125.jpg"><img src="images/gallery/gallery_125s.jpg" /></a>
+                  <a href="images/gallery/gallery_126.jpg"><img src="images/gallery/gallery_126s.jpg" /></a>
+                  <a href="images/gallery/gallery_127.jpg"><img src="images/gallery/gallery_127s.jpg" /></a>
+                  <a href="images/gallery/gallery_128.jpg"><img src="images/gallery/gallery_128s.jpg" /></a>
+                  <a href="images/gallery/gallery_129.jpg"><img src="images/gallery/gallery_129s.jpg" /></a>
+                  <a href="images/gallery/gallery_130.jpg"><img src="images/gallery/gallery_130s.jpg" /></a>
+                  <a href="images/gallery/gallery_131.jpg"><img src="images/gallery/gallery_131s.jpg" /></a>
+                  <a href="images/gallery/gallery_132.jpg"><img src="images/gallery/gallery_132s.jpg" /></a>
+                  <a href="images/gallery/gallery_133.jpg"><img src="images/gallery/gallery_133s.jpg" /></a>
+                  <a href="images/gallery/gallery_134.jpg"><img src="images/gallery/gallery_134s.jpg" /></a>
+                  <a href="images/gallery/gallery_135.jpg"><img src="images/gallery/gallery_135s.jpg" /></a>
+                  <a href="images/gallery/gallery_136.jpg"><img src="images/gallery/gallery_136s.jpg" /></a>
+                  <a href="images/gallery/gallery_137.jpg"><img src="images/gallery/gallery_137s.jpg" /></a>
+                  <a href="images/gallery/gallery_138.jpg"><img src="images/gallery/gallery_138s.jpg" /></a>
+                  <a href="images/gallery/gallery_139.jpg"><img src="images/gallery/gallery_139s.jpg" /></a>
+                  <a href="images/gallery/gallery_140.jpg"><img src="images/gallery/gallery_140s.jpg" /></a>
+                  <a href="images/gallery/gallery_141.jpg"><img src="images/gallery/gallery_141s.jpg" /></a>
+                  <a href="images/gallery/gallery_142.jpg"><img src="images/gallery/gallery_142s.jpg" /></a>
+                  <a href="images/gallery/gallery_143.jpg"><img src="images/gallery/gallery_143s.jpg" /></a>
+                  <a href="images/gallery/gallery_31.jpg"><img src="images/gallery/gallery_31s.jpg" /></a>
+                  <a href="images/gallery/gallery_32.jpg"><img src="images/gallery/gallery_32s.jpg" /></a>
+                  <a href="images/gallery/gallery_33.jpg"><img src="images/gallery/gallery_33s.jpg" /></a>
+                  <a href="images/gallery/gallery_34.jpg"><img src="images/gallery/gallery_34s.jpg" /></a>
+                  <a href="images/gallery/gallery_35.jpg"><img src="images/gallery/gallery_35s.jpg" /></a>
+                  <a href="images/gallery/gallery_36.jpg"><img src="images/gallery/gallery_36s.jpg" /></a>
+                
+                  <a href="images/gallery/gallery_1.jpg"><img src="images/gallery/gallery_1s.jpg" /></a>
+                  <a href="images/gallery/gallery_2.jpg"><img src="images/gallery/gallery_2s.jpg" /></a>
+                  <a href="images/gallery/gallery_3.jpg"><img src="images/gallery/gallery_3s.jpg" /></a>
+                  <a href="images/gallery/gallery_4.jpg"><img src="images/gallery/gallery_4s.jpg" /></a>
+                  <a href="images/gallery/gallery_5.jpg"><img src="images/gallery/gallery_5s.jpg" /></a>
+                  <a href="images/gallery/gallery_6.jpg"><img src="images/gallery/gallery_6s.jpg" /></a>
+                  <a href="images/gallery/gallery_7.jpg"><img src="images/gallery/gallery_7s.jpg" /></a>
+                  <a href="images/gallery/gallery_8.jpg"><img src="images/gallery/gallery_8s.jpg" /></a>
+                  <a href="images/gallery/gallery_9.jpg"><img src="images/gallery/gallery_9s.jpg" /></a>
+                  <a href="images/gallery/gallery_10.jpg"><img src="images/gallery/gallery_10s.jpg" /></a>
+                  <a href="images/gallery/gallery_11.jpg"><img src="images/gallery/gallery_11s.jpg" /></a>
+                  <a href="images/gallery/gallery_12.jpg"><img src="images/gallery/gallery_12s.jpg" /></a>
+                  <a href="images/gallery/gallery_13.jpg"><img src="images/gallery/gallery_13s.jpg" /></a>
+                  <a href="images/gallery/gallery_14.jpg"><img src="images/gallery/gallery_14s.jpg" /></a>
+                  <a href="images/gallery/gallery_15.jpg"><img src="images/gallery/gallery_15s.jpg" /></a>
+                  <a href="images/gallery/gallery_16.jpg"><img src="images/gallery/gallery_16s.jpg" /></a>
+                  <a href="images/gallery/gallery_17.jpg"><img src="images/gallery/gallery_17s.jpg" /></a>
+                  <a href="images/gallery/gallery_18.jpg"><img src="images/gallery/gallery_18s.jpg" /></a>
+                  <a href="images/gallery/gallery_19.jpg"><img src="images/gallery/gallery_19s.jpg" /></a>
+                  <a href="images/gallery/gallery_20.jpg"><img src="images/gallery/gallery_20s.jpg" /></a>
+                  <a href="images/gallery/gallery_21.jpg"><img src="images/gallery/gallery_21s.jpg" /></a>
+                  <a href="images/gallery/gallery_22.jpg"><img src="images/gallery/gallery_22s.jpg" /></a>
+                  <a href="images/gallery/gallery_24.jpg"><img src="images/gallery/gallery_24s.jpg" /></a>
+                  <a href="images/gallery/gallery_25.jpg"><img src="images/gallery/gallery_25s.jpg" /></a>
+                  <a href="images/gallery/gallery_26.jpg"><img src="images/gallery/gallery_26s.jpg" /></a>
+                  <a href="images/gallery/gallery_27.jpg"><img src="images/gallery/gallery_27s.jpg" /></a>
+                  <a href="images/gallery/gallery_28.jpg"><img src="images/gallery/gallery_28s.jpg" /></a>
+                  <a href="images/gallery/gallery_29.jpg"><img src="images/gallery/gallery_29s.jpg" /></a>
+                  <a href="images/gallery/gallery_30.jpg"><img src="images/gallery/gallery_30s.jpg" /></a>
+                  <a href="images/gallery/gallery_69.jpg"><img src="images/gallery/gallery_69s.jpg" /></a>
+                  <a href="images/gallery/gallery_70.jpg"><img src="images/gallery/gallery_70s.jpg" /></a>
+                  <a href="images/gallery/gallery_72.jpg"><img src="images/gallery/gallery_72s.jpg" /></a>
+                  <a href="images/gallery/gallery_73.jpg"><img src="images/gallery/gallery_73s.jpg" /></a>
+                  <a href="images/gallery/gallery_74.jpg"><img src="images/gallery/gallery_74s.jpg" /></a>
+                  <a href="images/gallery/gallery_75.jpg"><img src="images/gallery/gallery_75s.jpg" /></a>
+                
+                  <a href="images/gallery/gallery_37.jpg"><img src="images/gallery/gallery_37s.jpg" /></a>
+                  <a href="images/gallery/gallery_38.jpg"><img src="images/gallery/gallery_38s.jpg" /></a>
+                  <a href="images/gallery/gallery_39.jpg"><img src="images/gallery/gallery_39s.jpg" /></a>
+                  <a href="images/gallery/gallery_40.jpg"><img src="images/gallery/gallery_40s.jpg" /></a>
+                  <a href="images/gallery/gallery_41.jpg"><img src="images/gallery/gallery_41s.jpg" /></a>
+                  <a href="images/gallery/gallery_42.jpg"><img src="images/gallery/gallery_42s.jpg" /></a>
+                  <a href="images/gallery/gallery_43.jpg"><img src="images/gallery/gallery_43s.jpg" /></a>
+                  <a href="images/gallery/gallery_44.jpg"><img src="images/gallery/gallery_44s.jpg" /></a>
+                  <a href="images/gallery/gallery_45.jpg"><img src="images/gallery/gallery_45s.jpg" /></a>
+                  <a href="images/gallery/gallery_46.jpg"><img src="images/gallery/gallery_46s.jpg" /></a>
+                  <a href="images/gallery/gallery_47.jpg"><img src="images/gallery/gallery_47s.jpg" /></a>
+                  <a href="images/gallery/gallery_51.jpg"><img src="images/gallery/gallery_51s.jpg" /></a>
+                  <a href="images/gallery/gallery_52.jpg"><img src="images/gallery/gallery_52s.jpg" /></a>
+                  <a href="images/gallery/gallery_53.jpg"><img src="images/gallery/gallery_53s.jpg" /></a>
+                  <a href="images/gallery/gallery_54.jpg"><img src="images/gallery/gallery_54s.jpg" /></a>
+                  <a href="images/gallery/gallery_55.jpg"><img src="images/gallery/gallery_55s.jpg" /></a>
+                  <a href="images/gallery/gallery_56.jpg"><img src="images/gallery/gallery_56s.jpg" /></a>
+                  <a href="images/gallery/gallery_57.jpg"><img src="images/gallery/gallery_57s.jpg" /></a>
+                  <a href="images/gallery/gallery_58.jpg"><img src="images/gallery/gallery_58s.jpg" /></a>
+                  <a href="images/gallery/gallery_59.jpg"><img src="images/gallery/gallery_59s.jpg" /></a>
+                  <a href="images/gallery/gallery_60.jpg"><img src="images/gallery/gallery_60s.jpg" /></a>
+                  <a href="images/gallery/gallery_61.jpg"><img src="images/gallery/gallery_61s.jpg" /></a>
+                  <a href="images/gallery/gallery_62.jpg"><img src="images/gallery/gallery_62s.jpg" /></a>
+                  <a href="images/gallery/gallery_63.jpg"><img src="images/gallery/gallery_63s.jpg" /></a>
+                  <a href="images/gallery/gallery_64.jpg"><img src="images/gallery/gallery_64s.jpg" /></a>
+                  <a href="images/gallery/gallery_65.jpg"><img src="images/gallery/gallery_65s.jpg" /></a>
+                  <a href="images/gallery/gallery_66.jpg"><img src="images/gallery/gallery_66s.jpg" /></a>
+                  <a href="images/gallery/gallery_67.jpg"><img src="images/gallery/gallery_67s.jpg" /></a>
+                  <a href="images/gallery/gallery_68.jpg"><img src="images/gallery/gallery_68s.jpg" /></a>
+                  <a href="images/gallery/gallery_101.jpg"><img src="images/gallery/gallery_101s.jpg" /></a>
+                  <a href="images/gallery/gallery_102.jpg"><img src="images/gallery/gallery_102s.jpg" /></a>
+                  <a href="images/gallery/gallery_103.jpg"><img src="images/gallery/gallery_103s.jpg" /></a>
+                  <a href="images/gallery/gallery_106.jpg"><img src="images/gallery/gallery_106s.jpg" /></a>
+                  <a href="images/gallery/gallery_107.jpg"><img src="images/gallery/gallery_107s.jpg" /></a>
+                  <a href="images/gallery/gallery_108.jpg"><img src="images/gallery/gallery_108s.jpg" /></a>
+
+                  <a href="images/gallery/gallery_76.jpg"><img src="images/gallery/gallery_76s.jpg" /></a>
+                  <a href="images/gallery/gallery_77.jpg"><img src="images/gallery/gallery_77s.jpg" /></a>
+                  <a href="images/gallery/gallery_78.jpg"><img src="images/gallery/gallery_78s.jpg" /></a>
+                  <a href="images/gallery/gallery_79.jpg"><img src="images/gallery/gallery_79s.jpg" /></a>
+                  <a href="images/gallery/gallery_80.jpg"><img src="images/gallery/gallery_80s.jpg" /></a>
+                  <a href="images/gallery/gallery_81.jpg"><img src="images/gallery/gallery_81s.jpg" /></a>
+                  <a href="images/gallery/gallery_82.jpg"><img src="images/gallery/gallery_82s.jpg" /></a>
+                  <a href="images/gallery/gallery_83.jpg"><img src="images/gallery/gallery_83s.jpg" /></a>
+                  <a href="images/gallery/gallery_84.jpg"><img src="images/gallery/gallery_84s.jpg" /></a>
+                  <a href="images/gallery/gallery_85.jpg"><img src="images/gallery/gallery_85s.jpg" /></a>
+                  <a href="images/gallery/gallery_86.jpg"><img src="images/gallery/gallery_86s.jpg" /></a>
+                  <a href="images/gallery/gallery_87.jpg"><img src="images/gallery/gallery_87s.jpg" /></a>
+                  <a href="images/gallery/gallery_88.jpg"><img src="images/gallery/gallery_88s.jpg" /></a>
+                  <a href="images/gallery/gallery_89.jpg"><img src="images/gallery/gallery_89s.jpg" /></a>
+                  <a href="images/gallery/gallery_90.jpg"><img src="images/gallery/gallery_90s.jpg" /></a>
+                  <a href="images/gallery/gallery_91.jpg"><img src="images/gallery/gallery_91s.jpg" /></a>
+                  <a href="images/gallery/gallery_92.jpg"><img src="images/gallery/gallery_92s.jpg" /></a>
+                  <a href="images/gallery/gallery_93.jpg"><img src="images/gallery/gallery_93s.jpg" /></a>
+                  <a href="images/gallery/gallery_94.jpg"><img src="images/gallery/gallery_94s.jpg" /></a>
+                  <a href="images/gallery/gallery_95.jpg"><img src="images/gallery/gallery_95s.jpg" /></a>
+                  <a href="images/gallery/gallery_96.jpg"><img src="images/gallery/gallery_96s.jpg" /></a>
+                  <a href="images/gallery/gallery_97.jpg"><img src="images/gallery/gallery_97s.jpg" /></a>
+                  <a href="images/gallery/gallery_98.jpg"><img src="images/gallery/gallery_98s.jpg" /></a>
+                  <a href="images/gallery/gallery_99.jpg"><img src="images/gallery/gallery_99s.jpg" /></a>
+                  <a href="images/gallery/gallery_100.jpg"><img src="images/gallery/gallery_100s.jpg" /></a>
+                  
+                  <a href="images/gallery/gallery_207.jpg"><img src="images/gallery/gallery_207s.jpg" /></a>
+                  <a href="images/gallery/gallery_208.jpg"><img src="images/gallery/gallery_208s.jpg" /></a>
+                  <a href="images/gallery/gallery_209.jpg"><img src="images/gallery/gallery_209s.jpg" /></a>
+                  <a href="images/gallery/gallery_210.jpg"><img src="images/gallery/gallery_210s.jpg" /></a>
+                  <a href="images/gallery/gallery_211.jpg"><img src="images/gallery/gallery_211s.jpg" /></a>
+                  <a href="images/gallery/gallery_212.jpg"><img src="images/gallery/gallery_212s.jpg" /></a>
+                  <a href="images/gallery/gallery_213.jpg"><img src="images/gallery/gallery_213s.jpg" /></a>
+                  <a href="images/gallery/gallery_214.jpg"><img src="images/gallery/gallery_214s.jpg" /></a>
+                  <a href="images/gallery/gallery_215.jpg"><img src="images/gallery/gallery_215s.jpg" /></a>
+                  <a href="images/gallery/gallery_216.jpg"><img src="images/gallery/gallery_216s.jpg" /></a>
+                  <a href="images/gallery/gallery_217.jpg"><img src="images/gallery/gallery_217s.jpg" /></a>
+                  <a href="images/gallery/gallery_218.jpg"><img src="images/gallery/gallery_218s.jpg" /></a>
+                  <a href="images/gallery/gallery_219.jpg"><img src="images/gallery/gallery_219s.jpg" /></a>
+                  <a href="images/gallery/gallery_220.jpg"><img src="images/gallery/gallery_220s.jpg" /></a>
+                  <a href="images/gallery/gallery_221.jpg"><img src="images/gallery/gallery_221s.jpg" /></a>
+                  
+                  <a href="images/gallery/gallery_231.jpg"><img src="images/gallery/gallery_231s.jpg" /></a>
+                  <a href="images/gallery/gallery_232.jpg"><img src="images/gallery/gallery_232s.jpg" /></a>
+                  <a href="images/gallery/gallery_233.jpg"><img src="images/gallery/gallery_233s.jpg" /></a>
+                  <a href="images/gallery/gallery_234.jpg"><img src="images/gallery/gallery_234s.jpg" /></a>
+                  <a href="images/gallery/gallery_235.jpg"><img src="images/gallery/gallery_235s.jpg" /></a>
+                  <a href="images/gallery/gallery_236.jpg"><img src="images/gallery/gallery_236s.jpg" /></a>
+                  <a href="images/gallery/gallery_237.jpg"><img src="images/gallery/gallery_237s.jpg" /></a>
+                  <a href="images/gallery/gallery_238.jpg"><img src="images/gallery/gallery_238s.jpg" /></a>
+                  <a href="images/gallery/gallery_239.jpg"><img src="images/gallery/gallery_239s.jpg" /></a>
+                  <a href="images/gallery/gallery_240.jpg"><img src="images/gallery/gallery_240s.jpg" /></a>
+                  <a href="images/gallery/gallery_241.jpg"><img src="images/gallery/gallery_241s.jpg" /></a>
+                  <a href="images/gallery/gallery_243.jpg"><img src="images/gallery/gallery_242s.jpg" /></a>
+                  <a href="images/gallery/gallery_243.jpg"><img src="images/gallery/gallery_243s.jpg" /></a>
+                  <a href="images/gallery/gallery_244.jpg"><img src="images/gallery/gallery_244s.jpg" /></a>
+                  <a href="images/gallery/gallery_245.jpg"><img src="images/gallery/gallery_245s.jpg" /></a>
+                  
+            </div><!-- /#movieSlider -->
+
+            
+          </div><!-- /#streetMovie2 -->
+        </div><!-- /#bottomMenu -->
+        
+        <?php require("./module/bnr_area.html"); ?>
+        
+        <?php require("./module/footer.html"); ?>
+      </div><!-- /#main -->
+    </div><!-- /#wrapper -->
+  </div><!-- /#container -->
+
+</body>
+</html>

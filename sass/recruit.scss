@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+#leadBlock{
+	height:460px;
+}
+#leadBlock h2 {
+	width: 320px;
+	height: 139px;
+	background: url(../images/pageTtl/ttl_recruit.png) 0 0 no-repeat;
+	left:20px;
+	margin-top:120px;
+}
+#bottomMenu{
+	height:1100px
+}
+
+#bottomMenu #testInner img{
+	margin-left:70px
+}
+
+table,th,td{
+	border:1px solid #ccc
+}
+th,td{
+	line-height:1.5;
+	font-size:14px;
+	text-align:left;
+	padding:10px;
+}
+td span{
+	padding-left:50px;
+	font-weight:bold
+}

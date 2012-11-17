@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+#mainWrap{ overflopw:hidden; height:300px;}
+#mainWrap #main{ float:left; width:608px;}
+#mainWrap #main #base{ margin:0 auto; width:400px; height:300px; position:relative; z-index:0}
+#mainWrap #main #base div{ position:absolute; width:400px; height:300px; top:0; left:0;}
+#mainWrap #main #base #others{ z-index:1000}
+#mainWrap #main #base #body{ z-index:2000}
+#mainWrap #main #base #wheel{ z-index:3000}
+#mainWrap #main #base #seat{ z-index:4000}
+#mainWrap #main #base #rearSeat{ z-index:5000}
+#mainWrap #main #base #handle{ z-index:6000}
+
+
+/*type of bese bike*/
+/*.majesty .white #main #base{ background:url(../images/streetCustom/majesty_white.png) 0 0 no-repeat;}
+.majesty .black #main #base{ background:url(../images/streetCustom/majesty_black.png) 0 0 no-repeat;}
+.majesty .red #main #base{ background:url(../images/streetCustom/majesty_red.png) 0 0 no-repeat;}
+.majesty .brown #main #base{ background:url(../images/streetCustom/majesty_brown.png) 0 0 no-repeat;}
+.fusion #main #base{ background:url(../images/streetCustom/maje.png) 0 0 no-repeat;}
+.skywave #main #base{ background:url(../images/streetCustom/maje.png) 0 0 no-repeat;}
+.forza #main #base{ background:url(../images/streetCustom/maje.png) 0 0 no-repeat;}
+.maxam #main #base{ background:url(../images/streetCustom/maje.png) 0 0 no-repeat;}*/
+
+/*change large view*/
+.majesty .white #body.a{ background:url(../images/streetCustom/majesty_white_body_1.png) 0 0 no-repeat;}
+.majesty .white #body.b{ background:url(../images/streetCustom/majesty_white_body_2.png) 0 0 no-repeat;}
+.majesty .white #wheel.a{ background:url(../images/streetCustom/majesty_white_wheel_1.png) 0 0 no-repeat;}
+.majesty .white #wheel.b{ background:url(../images/streetCustom/majesty_white_wheel_2.png) 0 0 no-repeat;}
+.majesty .white #seat.a{ background:url(../images/streetCustom/majesty_white_seat_1.png) 0 0 no-repeat;}
+.majesty .white #seat.b{ background:url(../images/streetCustom/majesty_white_seat_2.png) 0 0 no-repeat;}
+.majesty .white #rearSeat.a{ background:url(../images/streetCustom/majesty_white_rearSeat_1.png) 0 0 no-repeat;}
+.majesty .white #rearSeat.b{ background:url(../images/streetCustom/majesty_white_rearSeat_2.png) 0 0 no-repeat;}
+.majesty .white #handle.a{ background:url(../images/streetCustom/majesty_white_handle_1.png) 0 0 no-repeat;}
+.majesty .white #handle.b{ background:url(../images/streetCustom/majesty_white_handle_2.png) 0 0 no-repeat;}
+.majesty .white #others.a{ background:url(../images/streetCustom/majesty_white_others_1.png) 0 0 no-repeat;}
+.majesty .white #others.b{ background:url(../images/streetCustom/majesty_white_others_2.png) 0 0 no-repeat;}
+.majesty .black #body.a{ background:url(../images/streetCustom/majesty_black_body_1.png) 0 0 no-repeat;}
+.majesty .black #body.b{ background:url(../images/streetCustom/majesty_black_body_2.png) 0 0 no-repeat;}
+.majesty .black #wheel.a{ background:url(../images/streetCustom/majesty_black_wheel_1.png) 0 0 no-repeat;}
+.majesty .black #wheel.b{ background:url(../images/streetCustom/majesty_black_wheel_2.png) 0 0 no-repeat;}
+.majesty .black #seat.a{ background:url(../images/streetCustom/majesty_black_seat_1.png) 0 0 no-repeat;}
+.majesty .black #seat.b{ background:url(../images/streetCustom/majesty_black_seat_2.png) 0 0 no-repeat;}
+.majesty .black #rearSeat.a{ background:url(../images/streetCustom/majesty_black_rearSeat_1.png) 0 0 no-repeat;}
+.majesty .black #rearSeat.b{ background:url(../images/streetCustom/majesty_black_rearSeat_2.png) 0 0 no-repeat;}
+.majesty .black #handle.a{ background:url(../images/streetCustom/majesty_black_handle_1.png) 0 0 no-repeat;}
+.majesty .black #handle.b{ background:url(../images/streetCustom/majesty_black_handle_2.png) 0 0 no-repeat;}
+.majesty .black #others.a{ background:url(../images/streetCustom/majesty_black_others_1.png) 0 0 no-repeat;}
+.majesty .black #others.b{ background:url(../images/streetCustom/majesty_black_others_2.png) 0 0 no-repeat;}
+.majesty .red #body.a{ background:url(../images/streetCustom/majesty_red_body_1.png) 0 0 no-repeat;}
+.majesty .red #body.b{ background:url(../images/streetCustom/majesty_red_body_2.png) 0 0 no-repeat;}
+.majesty .red #wheel.a{ background:url(../images/streetCustom/majesty_red_wheel_1.png) 0 0 no-repeat;}
+.majesty .red #wheel.b{ background:url(../images/streetCustom/majesty_red_wheel_2.png) 0 0 no-repeat;}
+.majesty .red #seat.a{ background:url(../images/streetCustom/majesty_red_seat_1.png) 0 0 no-repeat;}
+.majesty .red #seat.b{ background:url(../images/streetCustom/majesty_red_seat_2.png) 0 0 no-repeat;}
+.majesty .red #rearSeat.a{ background:url(../images/streetCustom/majesty_red_rearSeat_1.png) 0 0 no-repeat;}
+.majesty .red #rearSeat.b{ background:url(../images/streetCustom/majesty_red_rearSeat_2.png) 0 0 no-repeat;}
+.majesty .red #handle.a{ background:url(../images/streetCustom/majesty_red_handle_1.png) 0 0 no-repeat;}
+.majesty .red #handle.b{ background:url(../images/streetCustom/majesty_red_handle_2.png) 0 0 no-repeat;}
+.majesty .red #others.a{ background:url(../images/streetCustom/majesty_red_others_1.png) 0 0 no-repeat;}
+.majesty .red #others.b{ background:url(../images/streetCustom/majesty_red_others_2.png) 0 0 no-repeat;}
+.majesty .brown #body.a{ background:url(../images/streetCustom/majesty_brown_body_1.png) 0 0 no-repeat;}
+.majesty .brown #body.b{ background:url(../images/streetCustom/majesty_brown_body_2.png) 0 0 no-repeat;}
+.majesty .brown #wheel.a{ background:url(../images/streetCustom/majesty_brown_wheel_1.png) 0 0 no-repeat;}
+.majesty .brown #wheel.b{ background:url(../images/streetCustom/majesty_brown_wheel_2.png) 0 0 no-repeat;}
+.majesty .brown #seat.a{ background:url(../images/streetCustom/majesty_brown_seat_1.png) 0 0 no-repeat;}
+.majesty .brown #seat.b{ background:url(../images/streetCustom/majesty_brown_seat_2.png) 0 0 no-repeat;}
+.majesty .brown #rearSeat.a{ background:url(../images/streetCustom/majesty_brown_rearSeat_1.png) 0 0 no-repeat;}
+.majesty .brown #rearSeat.b{ background:url(../images/streetCustom/majesty_brown_rearSeat_2.png) 0 0 no-repeat;}
+.majesty .brown #handle.a{ background:url(../images/streetCustom/majesty_brown_handle_1.png) 0 0 no-repeat;}
+.majesty .brown #handle.b{ background:url(../images/streetCustom/majesty_brown_handle_2.png) 0 0 no-repeat;}
+.majesty .brown #others.a{ background:url(../images/streetCustom/majesty_brown_others_1.png) 0 0 no-repeat;}
+.majesty .brown #others.b{ background:url(../images/streetCustom/majesty_brown_others_2.png) 0 0 no-repeat;}
+
+#mainWrap #bodySelector{ float:left; width:319px}
+#mainWrap #bodySelector p.ttl1{ background:url(../images/streetCustom/ttl1.jpg) 0 0 no-repeat; height:38px; position:relative; margin-bottom:10px}
+#mainWrap #bodySelector p.ttl1 span{ position:absolute; top:20px; left:54px}
+#mainWrap #bodySelector ul{ margin-top:20px}
+#mainWrap #bodySelector ul li{ height:46px; text-indent:-9999px; overflow:hidden; margin-top:5px}
+#mainWrap #bodySelector ul li a{ width:203px; height:46px; display:block; float:left}
+#mainWrap #bodySelector ul li span{ display:none; float:right; width:94px; text-align:right; line-height:40px; font-size:11px}
+#mainWrap #bodySelector ul #majesty.selected span,
+#mainWrap #bodySelector ul #fusion.selected span,
+#mainWrap #bodySelector ul #skywave.selected span,
+#mainWrap #bodySelector ul #forza.selected span,
+#mainWrap #bodySelector ul #maxam.selected span{ display:block}
+#mainWrap #bodySelector ul #majesty a{ background:url(../images/streetCustom/bodySelect.jpg) 0 0 no-repeat;}
+#mainWrap #bodySelector ul #fusion a{ background:url(../images/streetCustom/bodySelect.jpg) 0 0 no-repeat;}
+#mainWrap #bodySelector ul #skywave a{ background:url(../images/streetCustom/bodySelect.jpg) 0 0 no-repeat;}
+#mainWrap #bodySelector ul #forza a{ background:url(../images/streetCustom/bodySelect.jpg) 0 0 no-repeat;}
+#mainWrap #bodySelector ul #maxam a{ background:url(../images/streetCustom/bodySelect.jpg) 0 0 no-repeat;}
+#mainWrap #bodySelector ul #majesty a:hover,
+#mainWrap #bodySelector ul #majesty.selected a,
+#mainWrap #bodySelector ul #fusion a:hover,
+#mainWrap #bodySelector ul #fusion.selected a,
+#mainWrap #bodySelector ul #skywave a:hover,
+#mainWrap #bodySelector ul #skywave.selected a,
+#mainWrap #bodySelector ul #forza a:hover,
+#mainWrap #bodySelector ul #forza.selected a,
+#mainWrap #bodySelector ul #maxam a:hover,
+#mainWrap #bodySelector ul #maxam.selected a{ background-position:-203px 0;}
+
+
+#colorWrap{ clear:both; margin-left:20px}
+#colorWrap dl{ overflow:hidden; background:url(../images/streetCustom/ttl2.jpg) 0 0 no-repeat; width:927px; height:60px; position:relative; }
+#colorWrap dt{ float:left; width:357px; position:relative}
+#colorWrap dt span{ position:absolute; top:30px; left:52px}
+#colorWrap dd{ width:137px; height:11px; position:absolute;}
+#colorWrap dd a{ width:100%; height:100%; display:block; text-indent:-9999px;}
+#colorWrap dd a:hover{ border-bottom:1px solid #5c5c5c;}
+#colorWrap #white{ top:27px; left:375px;}
+#colorWrap #black{ top:27px; left:513px; width:136px}
+#colorWrap #red{ top:27px; left:650px;}
+#colorWrap #brown{ top:27px; left:789px;}
+
+#partsWrap{ margin:0 0 50px 20px}
+#partsWrap p.ttl3{ background:url(../images/streetCustom/ttl3.jpg) 0 0 no-repeat; height:36px; position:relative; margin-bottom:10px}
+#partsWrap p.ttl3 span{ position:absolute; top:20px; left:54px}
+#partsWrap #partsBlockWrap{ overflow:hidden}
+#partsWrap div.partsBlock{ width:219px; float:left; margin:0 15px 10px 0;}
+#partsWrap div.mr0{ margin-right:0}
+#partsWrap div.partsBlock ul{ overflow:hidden}
+#partsWrap div.partsBlock ul li{ float:left; width:107px;}
+#partsWrap div.partsBlock ul li { padding-bottom:2px}
+#partsWrap div.partsBlock ul li img{ margin-bottom:1px;}
+#partsWrap div.partsBlock ul li img:hover,
+#partsWrap div.partsBlock ul li img.selected{ border-bottom:1px solid #5c5c5c; margin-bottom:0}
+#partsWrap div.partsBlock p{ border-top:1px solid #fff; padding-top:3px; text-align:left; font-size:10px}
+
+/*
+majestyBody
+majestyWheel
+majestySeat
+majestyRearSeat
+majestyHandle
+majestyOthers
+*/
+

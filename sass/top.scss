@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/* top */
+#leadBlock{ 
+	overflow:hidden; 
+  padding-top:30px; 
+  position:relative;  
+}
+#leadBlock h2{ 
+	display:block; 
+  width:232px; 
+  height:44px; 
+  margin-top:100px;
+  background:url(../images/topTtl.png) 0 0 no-repeat;
+	text-indent:-9999px;
+	position:absolute;
+	z-index:0;
+	right:0
+}
+#leadBlock dl{
+	float:left;
+  background:url(../images/shopMenu.png) 0 0 no-repeat;
+  width:227px;
+  height:301px;
+  padding:22px 0 0 15px;
+	text-indent:-9999px;
+}
+#leadBlock dt{
+	height:0;
+  line-height:0
+}
+#leadBlock dd a{
+	display:block;
+  width:226px;
+  height:65px;
+}
+#leadBlock #expander{
+	background:url(../images/bgBlack.png) 0 0;
+	width:0;
+	height:258px;
+	top:21px;
+	left:2px;
+	position:relative;
+	overflow:hidden;
+	z-index:1000;
+	float:left;
+	text-align:left;
+}
+#leadBlock #expander li.shopSeeker{
+	
+	height:301px;
+	position:relative
+}
+#leadBlock #expander #shop1cont{
+	background:url(../images/shop1detail.png) 4px 4px no-repeat;
+}
+#leadBlock #expander #shop2cont{
+	background:url(../images/shop2detail.png) 4px 4px no-repeat;
+}
+#leadBlock #expander #shop3cont{
+	background:url(../images/shop3detail.png) 4px 4px no-repeat;
+}
+#leadBlock #expander #shop4cont{
+
+}
+#leadBlock #expander #shop4cont div{
+	background:url(../images/shop4detail.gif) 0 50% no-repeat;
+	margin:4px;
+	width:100%;
+	height:250px;
+}
+#leadBlock #expander a.pos{
+	display:block;
+	width:71px;
+	height:71px;
+	position:absolute;
+	right:10px;
+	top:178px;
+	text-indent:-9999px;
+}
+#leadBlock #expander #shop1cont a.pos{
+	background:url(../images/toShopPageBtn1.png) 0 0 no-repeat;
+}
+#leadBlock #expander #shop2cont a.pos{
+	background:url(../images/toShopPageBtn2.png) 0 0 no-repeat;
+}
+#leadBlock #expander #shop3cont a.pos{
+	background:url(../images/toShopPageBtn3.png) 0 0 no-repeat;
+}
+#leadBlock #expander #shop4cont a.pos{
+	background:url(../images/toShopPageBtn4.png) 0 0 no-repeat;
+}
+#leadBlock #expander #shop1cont a.pos:hover,
+#leadBlock #expander #shop2cont a.pos:hover,
+#leadBlock #expander #shop3cont a.pos:hover,
+#leadBlock #expander #shop4cont a.pos:hover{
+	background-position:0 -71px
+}
+#ticker{
+	width:100%;
+  text-align:left;
+  margin:0 0 1px
+}
+#bottomMenu{
+	width:100%;
+  height:392px;
+  background:url(../images/topBottomMenu.jpg) 0 0 no-repeat;
+  position:relative
+}
+#bottomMenu div{
+	position:absolute
+}
+#bottomMenu div.pos1{ width:320px; height:392px; top:0; left:0; background:url(../images/topPos1.jpg) 0 0 no-repeat}
+#bottomMenu div.pos2{ width:318px; height:131px; top:0; left:321px; background:url(../images/topPos2.jpg) 0 0 no-repeat}
+#bottomMenu div.pos3{ width:158px; height:260px; bottom:0; left:321px; background:url(../images/topPos3.jpg) 0 0 no-repeat}
+#bottomMenu div.pos4{ width:159px; height:119px; top:132px; left:480px; background:url(../images/topPos4.jpg) 0 0 no-repeat}
+#bottomMenu div.pos5{ width:329px; height:140px; bottom:0; right:151px; background:url(../images/topPos5.jpg) 0 0 no-repeat}
+#bottomMenu div.pos6{ width:150px; height:140px; bottom:0; right:0; background:url(../images/topPos6.jpg) 0 0 no-repeat}
+#bottomMenu div.pos7{ position:absolute; right:0; top:0; width:319px; height:249px; border:1px solid #3c3c3c}
+#bottomMenu div.pos1 ul.slideItems{
+	margin:200px auto 0;
+	width:270px;
+}
+#bottomMenu div.pos3 ul.slideMagazines{
+	margin:90px auto 0;
+	width:270px;
+}
+#bottomMenu div.pos1 h3,
+#bottomMenu div.pos3 h3{
+	text-indent:-9999px;
+}
+#bottomMenu div.pos2 a,
+#bottomMenu div.pos4 a{
+ width:100%;
+ height:100%;
+ display:block;
+ text-indent:-9999px;
+}
+#bottomMenu div.pos5 img{
+	margin-top:65px
+}
+#bottomMenu div.pos6 .mt65{
+	margin-top:65px;
+}
+/*#bottomMenu ul li.pos1 a{ width:320px; height:390px; top:0; left:0}
+#bottomMenu ul li.pos2 a{ width:318px; height:130px; top:0; left:321px; background-position:322px 0;}
+#bottomMenu ul li.pos2 a:hover{ background-position:-321px -392px;}
+#bottomMenu ul li.pos3 a{ width:158px; height:260px; top:132px; left:321px; background-position:322px 0;}
+#bottomMenu ul li.pos3 a:hover{ background-position:-321px -524px;}
+#bottomMenu ul li.pos4 a{ width:159px; height:119px; top:132px; left:480px; background-position:322px 0;}
+#bottomMenu ul li.pos4 a:hover{ background-position:-480px -524px;}
+#bottomMenu ul li.pos5 a{ width:295px; height:60px; top:316px; left:496px; background-position:322px 0;}
+#bottomMenu ul li.pos5 a:hover{ background-position:-496px -708px;}
+#bottomMenu ul li.pos6 a{ width:118px; height:26px; top:320px; left:829px; background-position:322px 0;}
+#bottomMenu ul li.pos6 a:hover{ background-position:-829px -712px;}
+#bottomMenu ul li.pos7 a{ width:118px; height:26px; top:351px; left:829px; background-position:322px 0;}
+#bottomMenu ul li.pos7 a:hover{ background-position:-829px -743px;}
+#bottomMenu div.pos8{ position:absolute; right:0; top:0; width:319; height:249px; border:1px solid #3c3c3c}*/
+
+#bnrArea{
+	margin:15px 0;
+  padding:15px 0;
+  border-top:1px solid #292929;
+  border-bottom:1px solid #292929;
+	padding-left:150px;
+}
+#bnrArea ul{
+	overflow:hidden;
+}
+#bnrArea li{
+	float:left;
+  margin-right:5px;
+}
+
+
+
+/* Ticker Styling */
+#ticker .bx-wrapper{
+	background:url(../images/tickerBg.png);
+	border-top:1px solid #3e3e3e;
+	border-bottom:1px solid #3e3e3e;
+}
+#ticker .bx-window {
+	background:url(../images/ttlWhatsNew.png) 10px 50% no-repeat;
+	padding:10px 0 10px 150px;
+	
+}
+#js-news li {
+	width: 960px;
+	color:#fff
+}
+#js-news li a{
+	color:#fff;
+	font-weight:bold;
+	font-size:16px;
+}

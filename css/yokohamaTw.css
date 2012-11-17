@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+#bayStyleWrap {
+	overflow: hidden
+}
+#bayStyleWrap li{
+	float: left;
+}
+#tw {
+  background: url(../images/yokohamaTwBg.jpg) 0 0 no-repeat;
+  height: 1600px;
+  text-indent: -9999px;
+  margin-bottom: 50px; 
+}

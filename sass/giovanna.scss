@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+#leadBlock{
+	height:460px;
+}
+#leadBlock h2 {
+	width: 547px;
+	height: 138px;
+	background: url(../images/pageTtl/ttl_gio.png) 0 0 no-repeat;
+	left:20px;
+	margin-top:120px;
+}
+#bottomMenu{
+	height:3550px;
+}
+#inner{
+	background:url(../images/giovanna1.jpg) 0 0 no-repeat;
+	height:3550px;
+	width:960px;
+	position:relative;
+	overflow:hidden;
+}
+#inner a{
+	width:816px;
+	height:40px;
+	position:absolute;
+	bottom:65px;
+	text-indent:-9999px;
+}

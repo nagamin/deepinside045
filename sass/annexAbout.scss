@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+#block1{ margin:30px 0; overflow:hidden}
+#block1 #tab ul{ overflow:hidden}
+#block1 #tab ul li{ height:26px; width:197px; float:left; margin-right:1px;}
+#block1 #tab ul li a{ display:block; text-indent:-9999px; width:100%; height:100%; background:url(../images/aboutTab.jpg)}
+#block1 #tab ul #sw1 a{ background-position:0 0;}
+#block1 #tab ul #sw2 a{ background-position:396px 0}
+#block1 #tab ul #sw3 a{ background-position:198px 0}
+#block1 #tab ul #sw1 a:hover,
+#block1 #tab ul #sw1 a.current{ background-position:0 -26px;}
+#block1 #tab ul #sw2 a:hover,
+#block1 #tab ul #sw2 a.current{ background-position:396px -26px}
+#block1 #tab ul #sw3 a:hover,
+#block1 #tab ul #sw3 a.current{ background-position:198px -26px}
+#block1 #cont1{ width:100%; height:1022px; background:url(../images/aboutCont400.jpg); position:relative; text-align:left; line-height:2}
+#block1 #cont1 p.txt1{ position:absolute; top:560px; left:430px;}
+#block1 #cont1 p.txt2{ position:absolute; top:860px; left:430px;}
+#block1 #cont2{ width:100%; height:1022px; background:url(../images/aboutCont750.jpg); position:relative; text-align:left; line-height:2}
+#block1 #cont2 p.txt1{ position:absolute; top:560px; left:430px;}
+#block1 #cont2 p.txt2{ position:absolute; top:860px; left:430px;}
+#block1 #cont3{ width:100%; height:1022px; background:url(../images/aboutCont1100.jpg); position:relative; text-align:left; line-height:2}
+#block1 #cont3 p.txt1{ position:absolute; top:560px; left:430px;}
+#block1 #cont3 p.txt2{ position:absolute; top:860px; left:430px;}
+
+#block1 #cont2Wrap,
+#block1 #cont3Wrap{ display:none;}
+
+table th,td{ padding:10px}
+table th{ background:#696969; border:1px solid #999}
+table td{ background:#333333; border:1px solid #999}
+
+table.full{ width:100%}
+table.full th.ttl{ text-align:center; background:#242424; font-weight:bold}
+table.full th,table.full td{ margin-top:30px; text-align:left}
+
+ul.thumbLight{ overflow:hidden; margin:40px 0 40px;}
+ul.thumbLight li{ float:left}
