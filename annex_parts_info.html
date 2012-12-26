@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="css/shop.css" type="text/css" />
 <link rel="stylesheet" href="css/annexPartsInfo.css" type="text/css" />
 <link rel="stylesheet" href="css/accordionImageMenu.css" type="text/css" />
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" />
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/crossSlide.js"></script>
@@ -19,6 +20,12 @@
 <script type="text/javascript" src="js/jquery.ui.js"></script>
 <script type="text/javascript" src="js/accordionImageMenu.js"></script>
 <script type="text/javascript" src="js/annexPartsInfo.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox.js"></script>
+<script>
+$(function(){
+	$('#list a').lightBox({fixedNavigation:true});
+})
+</script>
 </head>
 <body>
 
@@ -36,10 +43,10 @@
       	<?php require("./module/lead_block_default.html"); ?>
         
         <div id="bottomMenu">
-        	<div id="navWrap">
-          	<dl>
-            	<dt>DEEP☆INSIDE</dd>
-            	<dd class="nav1"><a href="annex.html">Home</a></dd>
+          <div id="navWrap">
+            <dl>
+              <dt>DEEP☆INSIDE</dd>
+              <dd class="nav1"><a href="annex.html">Home</a></dd>
               <dd class="nav2"><a href="http://www.goobike.com/shop/client_8502081/showroom.html" target="_blank">Showroom</a></dd>
               <dd class="nav3"><a href="javascript:void(0)" class="current">Parts</a></dd>
               <dd class="nav4"><a href="annex_custom_info.html">Custom</a></dd>
@@ -47,20 +54,18 @@
             </dl><!-- /#nav -->
           </div><!-- /#navWrap -->
           <div id="content">
-          	
-        		<div id="block1">
-                <img src="images/partsLine1.jpg" alt="カスタムパーツ一覧 横浜スタイル" class="mb20" />
-                <img src="images/annex_parts_comingsoon.jpg" width="960" height="449" alt="coming soon" />
-                <!--
-            	
-            	<div id='accordion'>
-                <a href="javascript:void(0)"><span>ZEPHYR 400</span><img src='images/parts400.jpg' /></a>
-                <a href="javascript:void(0)"><span>ZEPHYR 750</span><img src='images/parts750.jpg' /></a>
-                <a href="javascript:void(0)"><span>ZEPHYR 1100</span><img src='images/parts1100.jpg' /></a>
-                <a href="javascript:void(0)"><span>OPTION</span><img src='images/partsOption.jpg' /></a>
-              </div>
-              -->
-              <!-- /#accordion -->
+
+            <div id="block1">
+              <img src="images/partsLine1.jpg" alt="カスタムパーツ一覧 横浜スタイル" class="mb20" />
+              <ul id="list">
+                <li><a href="images/goods/1_1.jpg" title="<p class='ttl'>ZEPHERY1100 Mk-Ⅱ外装セット 寺崎 Ver. ¥250,000(税抜) フェンダーレスKIT付・ボルトオン・ノーマルシート対応(FXタンクキャップ、Mk-Ⅱテールランプ別売り)</p><p class='link'><a href='goods2.html'>ご購入はこちらから</a></p>"><img src="images/goods/1_1s.jpg" title="hoge"/></a></li>
+                <li><a href="images/goods/1_2.jpg" title="<p class='ttl'>ZEPHERY1100 Mk-Ⅱ外装セット 本牧 Ver. ¥250,000(税抜) フェンダーレスKIT付・ボルトオン・ノーマルシート対応(FXタンクキャップ、Mk-Ⅱテールランプ別売り)</p><p class='link'><a href='goods2.html'>ご購入はこちらから</a></p>"><img src="images/goods/1_2s.jpg" /></a></li>
+                <li><a href="images/goods/1_3.jpg" title="<p class='ttl'>ZEPHERY1100 Mk-Ⅱ外装セット 赤レンガ Ver. ¥250,000(税抜) フェンダーレスKIT付・ボルトオン・ノーマルシート対応(FXタンクキャップ、Mk-Ⅱテールランプ別売り)</p><p class='link'><a href='goods2.html'>ご購入はこちらから</a></p>"><img src="images/goods/1_3s.jpg" /></a></li>
+                <li><a href="images/goods/1_4.jpg" title="<p class='ttl'>ZEPHERY1100 Mk-Ⅱ外装セット 横須賀 Ver. ¥250,000(税抜) フェンダーレスKIT付・ボルトオン・ノーマルシート対応(FXタンクキャップ、Mk-Ⅱテールランプ別売り)</p><p class='link'><a href='goods2.html'>ご購入はこちらから</a></p>"><img src="images/goods/1_4s.jpg" /></a></li>
+                <li><a href="images/goods/1_5.jpg" title="<p class='ttl'>ZEPHERY1100 Mk-Ⅱ外装セット 黒ゲル ¥190,000(税抜) フェンダーレスKIT付・ボルトオン・ノーマルシート対応(FXタンクキャップ、Mk-Ⅱテールランプ別売り)</p><p class='link'><a href='goods2.html'>ご購入はこちらから</a></p>"><img src="images/goods/1_5s.jpg" /></a></li>
+                <li><a href="images/goods/2_1.jpg" title="<p class='ttl'>ZEPHERY ショート管 1100用 ¥45,000(税抜) / 750用 ¥45,000(税抜) / 400χ用 ¥35,000(税抜)</p><p class='link'><a href='goods2.html'>ご購入はこちらから</a></p>"><img src="images/goods/2_1s.jpg" /></a></li>
+                <li><a href="images/goods/2_2.jpg" title="<p class='ttl'>ZEPHERY モナカ管 1100用 ¥49,000(税抜) / 750用 ¥49,000(税抜) / 400χ用 ¥49,000(税抜)</p><p class='link'><a href='goods2.html'>ご購入はこちらから</a></p>"><img src="images/goods/2_2s.jpg" /></a></li>
+              </ul>
             </div><!-- /#block1 -->
             
             <div id="block2" class="mb30">

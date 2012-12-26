@@ -1,5 +1,0 @@
-AuthUserFile /home/sites/heteml/users70/k/i/m/kimcom/web/kimcom/.htpasswd
-AuthGroupFile /dev/null
-AuthName "kimcom"
-AuthType Basic
-require valid-user

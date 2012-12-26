@@ -239,27 +239,34 @@ div.street #navWrap dd.nav5 a {
 div.yokohama #bottomMenu #navWrap dt {
 	left: 15px;
 }
+div.yokohama #bottomMenu #navWrap dd {
+  top: 0;
+  height: 53px;
+}
+div.yokohama #bottomMenu #navWrap dd a.current {
+  background-position: 0 0;
+}
 div.yokohama #navWrap dd.nav1 {
-  width: 49px;
-  left: 460px; }
-
+  width: 35px;
+  left: 463px; }
 div.yokohama #navWrap dd.nav2 {
-  width: 76px;
-  left: 525px; }
-
+  width: 61px;
+  left: 506px; }
 div.yokohama #navWrap dd.nav3 {
-  width: 112px;
-  left: 621px; }
-
-div.yokohama #navWrap dd.nav5 {
-  width: 63px;
-  left: 815px; }
+  width: 89px;
+  left: 574px; }
 div.yokohama #navWrap dd.nav4 {
-  width: 47px;
-  left: 750px; }
+  width: 77px;
+  left: 671px; }
+div.yokohama #navWrap dd.nav5 {
+  width: 71px;
+  left: 754px; }
 div.yokohama #navWrap dd.nav6 {
-  width: 42px;
-  left: 895px; }
+  width: 70px;
+  left: 832px; }
+div.yokohama #navWrap dd.nav7 {
+  width: 34px;
+  left: 909px; }
 div.yokohama #navWrap dd.nav1 a {
   background: url(../images/yokohamaNav1.jpg) 0 0 no-repeat; }
 div.yokohama #navWrap dd.nav2 a {
@@ -267,11 +274,17 @@ div.yokohama #navWrap dd.nav2 a {
 div.yokohama #navWrap dd.nav3 a {
   background: url(../images/yokohamaNav3.jpg) 0 0 no-repeat; }
 div.yokohama #navWrap dd.nav4 a {
-  background: url(../images/yokohamaNav5.jpg) 0 0 no-repeat; }
-div.yokohama #navWrap dd.nav5 a {
   background: url(../images/yokohamaNav4.jpg) 0 0 no-repeat; }
+div.yokohama #navWrap dd.nav5 a {
+  background: url(../images/yokohamaNav5.jpg) 0 0 no-repeat; }
 div.yokohama #navWrap dd.nav6 a {
   background: url(../images/yokohamaNav6.jpg) 0 0 no-repeat; }
+div.yokohama #navWrap dd.nav7 a {
+  background: url(../images/yokohamaNav7.jpg) 0 0 no-repeat; }
+div.yokohama #navWrap dd a:hover,
+div.yokohama #navWrap dd a.current {
+    background-position: 0 -53px!important;
+}
 
 #bottomMenu #annexMovie1,
 #bottomMenu #streetMovie1,
