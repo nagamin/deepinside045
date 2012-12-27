@@ -1,2 +1,0 @@
-AddHandler php5.3-script .html
-php_flag short_open_tag off
