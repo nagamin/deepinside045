@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+#list {
+  overflow: hidden;
+}
+#list li {
+  float: left;
+  width: 180px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}

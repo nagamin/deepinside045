@@ -247,26 +247,23 @@ div.yokohama #bottomMenu #navWrap dd a.current {
   background-position: 0 0;
 }
 div.yokohama #navWrap dd.nav1 {
-  width: 35px;
-  left: 448px; }
+  width: 73px;
+  left: 446px; }
 div.yokohama #navWrap dd.nav2 {
-  width: 61px;
-  left: 491px; }
+  width: 109px;
+  left: 519px; }
 div.yokohama #navWrap dd.nav3 {
-  width: 89px;
-  left: 559px; }
-div.yokohama #navWrap dd.nav4 {
-  width: 77px;
-  left: 656px; }
-div.yokohama #navWrap dd.nav5 {
-  width: 71px;
-  left: 739px; }
-div.yokohama #navWrap dd.nav6 {
   width: 70px;
-  left: 817px; }
-div.yokohama #navWrap dd.nav7 {
-  width: 55px;
-  left: 894px; }
+  left: 628px; }
+div.yokohama #navWrap dd.nav4 {
+  width: 83px;
+  left: 698px; }
+div.yokohama #navWrap dd.nav5 {
+  width: 104px;
+  left: 781px; }
+div.yokohama #navWrap dd.nav6 {
+  width: 76px;
+  left: 877px; }
 div.yokohama #navWrap dd.nav1 a {
   background: url(../images/yokohamaNav1.jpg) 0 0 no-repeat; }
 div.yokohama #navWrap dd.nav2 a {
@@ -279,8 +276,6 @@ div.yokohama #navWrap dd.nav5 a {
   background: url(../images/yokohamaNav5.jpg) 0 0 no-repeat; }
 div.yokohama #navWrap dd.nav6 a {
   background: url(../images/yokohamaNav6.jpg) 0 0 no-repeat; }
-div.yokohama #navWrap dd.nav7 a {
-  background: url(../images/yokohamaNav7.jpg) 0 0 no-repeat; }
 div.yokohama #navWrap dd a:hover,
 div.yokohama #navWrap dd a.current {
     background-position: 0 -53px!important;
