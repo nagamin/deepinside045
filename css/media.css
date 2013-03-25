@@ -13,6 +13,12 @@
   height: 1000px;
   background: #000; }
 
+#bottomMenu #content35 {
+  position: relative;
+  margin-left: -33px;
+  margin-top: -10px;
+}
+
 #bottomMenu #mediaSlider {
   width: 930px;
   margin: 0 auto 0;
