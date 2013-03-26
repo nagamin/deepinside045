@@ -257,101 +257,61 @@ hr {
   font-size: 10px; }
 
 #menu {
-  position: absolute;
-  bottom: 5px;
-  left: 0; }
+  position: relative;
+  top: 45px;
+  left: 40px; }
+#menu div{
+    position:absolute;
+    top:24px;
+    left:5px;
+    background:url(../images/bgBlack.png) repeat;
+    width:912px;
+    height:90px;
+    padding:30px;
+    display:none;
+}
 
 #menu li {
   float: left;
+  white-space: nowrap;
   padding: 0 0 10px 0;
   position: relative; }
 
 #menu a {
   float: left;
   height: 25px;
-  color: #999;
-  text-transform: uppercase;
-  font: bold 12px/25px Arial, Helvetica;
+  color: #c3c3c3;
+  font: 12px/25px Arial, Helvetica;
   text-decoration: none;
   text-shadow: 0 1px 0 #000; }
 
 #menu li.setWidth {
-  width: 138px; }
+  width: 110px; }
 
-#menu a.n1,
-#menu a.n2,
-#menu a.n3,
-#menu a.n4,
-#menu a.n5,
-#menu a.n6,
-#menu a.n7 {
-  text-indent: -9999px;
+#menu a.bk {
   height: 13px;
   display: block;
   margin: 0 auto;
   float: none !important; }
 
-#menu a.n1 {
-  width: 38px;
-  background: url(../images/menu/home.jpg) 0 0 no-repeat;
-  margin-left: 60px; }
-
-#menu a.n2 {
-  width: 36px;
-  background: url(../images/menu/shop.jpg) 0 0 no-repeat; }
-
-#menu a.n3 {
-  width: 58px;
-  background: url(../images/menu/stock.jpg) 0 0 no-repeat; }
-
-#menu a.n4 {
-  width: 47px;
-  background: url(../images/menu/company.jpg) 0 0 no-repeat; }
-
-#menu a.n5 {
-  width: 46px;
-  background: url(../images/menu/access.jpg) 0 0 no-repeat; }
-
-#menu a.n6 {
-  width: 70px;
-  background: url(../images/menu/media.jpg) 0 0 no-repeat; }
-
-#menu a.n7 {
-  width: 36px;
-  background: url(../images/menu/blog.jpg) 0 0 no-repeat; }
-
-#menu li:hover > ul {
-  display: block; }
-
-#menu li a.n1:hover,
-#menu li:hover a.n2,
-#menu li:hover a.n3,
-#menu li:hover a.n4,
-#menu li:hover a.n5,
-#menu li:hover a.n6,
-#menu li:hover a.n7 {
-  background-position: 0 -13px; }
+#menu li.selected > a {
+  color: #474747;
+}
 
 /* Sub-menu */
 #menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: none;
   position: absolute;
-  top: 18px;
-  left: 0;
+  top: 28px;
+  left: 50px;
   z-index: 99999; }
 
-#menu ul ul {
-  top: 0;
-  left: 150px; }
-
-#menu ul li {
-  float: none;
-  margin: 0;
-  padding: 0;
-  display: block; }
+#menu li div li {
+  float: left;
+  margin-right: 30px;
+}
 
 #menu ul a {
   height: auto;
@@ -359,7 +319,19 @@ hr {
   display: block;
   white-space: nowrap;
   float: none;
+  color: #fff;
   text-transform: none; }
+
+#menu ul a:hover {
+  color: #bebebe;
+  text-decoration: underline
+}
+
+#menu li div p {
+  top: 70px!important;
+  left: 50px;
+  line-height: 1.8;
+}
 
 /* Clear floated elements */
 #menu:after {

@@ -15,6 +15,33 @@ $(function(){
 	if( $("#area45").length > 0 ) {
 		$("#header p:first").html('224-0057 神奈川県横浜市港北区新羽町1496-1A<br />TEL.045-633-1558 FAX.045-633-1559');
 	}
+
+  //menu
+  var $oe_menu    = $('#menu');
+  var $oe_menu_items  = $oe_menu.children('li');
+  var $oe_overlay   = $('#oe_overlay');
+
+  $oe_menu_items.bind('mouseenter',function(){
+    var $this = $(this);
+    $this.addClass('slided selected');
+    $this.children('div').css('z-index','9999').stop(true,true).slideDown(200,function(){
+      $oe_menu_items.not('.slided').children('div').hide();
+      $this.removeClass('slided');
+    });
+  }).bind('mouseleave',function(){
+    var $this = $(this);
+    $this.removeClass('selected').children('div').css('z-index','1');
+  });
+
+  $oe_menu.bind('mouseenter',function(){
+    var $this = $(this);
+    $this.addClass('hovered');
+  }).bind('mouseleave',function(){
+    var $this = $(this);
+    $this.removeClass('hovered');
+    $oe_menu_items.children('div').hide();
+  })
+
 });
 
 
