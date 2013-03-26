@@ -18,20 +18,51 @@
 
 #leadBlock dl {
   float: left;
-  background: url(../images/shopMenu.png) 0 0 no-repeat;
   width: 227px;
   height: 301px;
   padding: 22px 0 0 15px;
-  text-indent: -9999px; }
+  }
 
 #leadBlock dt {
   height: 0;
-  line-height: 0; }
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+#leadBlock dd {
+  width: 224px;
+  height: 84px;
+  margin-bottom: 2px;
+  background: url(../images/bgBlack.png) 0 0;
+}
 
 #leadBlock dd a {
+  color: #fff;
   display: block;
-  width: 226px;
-  height: 65px; }
+  position: relative;
+  line-height: 1.4;
+  text-align: left;
+}
+
+#leadBlock #shop1 { border-left: 2px solid #e0640a;}
+#leadBlock #shop2 { border-left: 2px solid #0002ca;}
+#leadBlock #shop3 { border-left: 2px solid #424242;}
+#leadBlock #shop1:hover,
+#leadBlock #shop2:hover,
+#leadBlock #shop3:hover { border-left-width: 10px; width: 216px;}
+
+#leadBlock dd a b {
+  font-size: 10px;
+}
+
+#leadBlock dd a span {
+  position: absolute;
+  top: 24px;
+  left: 28px;
+}
+#leadBlock #shop1:hover a span,
+#leadBlock #shop2:hover a span,
+#leadBlock #shop3:hover a span{ margin-left: -8px;}
 
 #leadBlock #expander {
   background: url(../images/bgBlack.png) 0 0;
@@ -50,15 +81,12 @@
   position: relative; }
 
 #leadBlock #expander #shop1cont {
-  background: url(../images/shop1detail.png) 4px 4px no-repeat; }
+  background: url(../images/shop3detail.png) 4px 4px no-repeat; }
 
 #leadBlock #expander #shop2cont {
   background: url(../images/shop2detail.png) 4px 4px no-repeat; }
 
-#leadBlock #expander #shop3cont {
-  background: url(../images/shop3detail.png) 4px 4px no-repeat; }
-
-#leadBlock #expander #shop4cont div {
+#leadBlock #expander #shop3cont div {
   background: url(../images/shop4detail.gif) 0 50% no-repeat;
   margin: 4px;
   width: 100%;
@@ -74,21 +102,15 @@
   text-indent: -9999px; }
 
 #leadBlock #expander #shop1cont a.pos {
-  background: url(../images/toShopPageBtn1.png) 0 0 no-repeat; }
-
+  background: url(../images/toShopPageBtn3.png) 0 0 no-repeat; }
 #leadBlock #expander #shop2cont a.pos {
   background: url(../images/toShopPageBtn2.png) 0 0 no-repeat; }
-
 #leadBlock #expander #shop3cont a.pos {
-  background: url(../images/toShopPageBtn3.png) 0 0 no-repeat; }
-
-#leadBlock #expander #shop4cont a.pos {
   background: url(../images/toShopPageBtn4.png) 0 0 no-repeat; }
 
 #leadBlock #expander #shop1cont a.pos:hover,
 #leadBlock #expander #shop2cont a.pos:hover,
-#leadBlock #expander #shop3cont a.pos:hover,
-#leadBlock #expander #shop4cont a.pos:hover {
+#leadBlock #expander #shop3cont a.pos:hover {
   background-position: 0 -71px; }
 
 #ticker {
