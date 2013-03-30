@@ -59,13 +59,13 @@ $(function(){
 	
 	if(leadBlock){
 		$("#shop1cont").click(function(){
-			location.href = "annex.html";
+			location.href = "yokohama.html";
 		})
 		$("#shop2cont").click(function(){
 			location.href = "street.html";
 		})
 		$("#shop3cont").click(function(){
-			location.href = "yokohama.html";
+			location.href = "area045.html";
 		})
 	}
 	
