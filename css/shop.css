@@ -44,7 +44,7 @@ div.yokohama #leadBlock h2 {
   width: 224px;
   height: 84px;
   margin-bottom: 2px;
-  background: url(../images/bgBlack.png) 0 0;
+  background: #000;
 }
 #leadBlock dd a {
   color: #fff;

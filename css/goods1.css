@@ -25,6 +25,9 @@
 #lightbox-nav-btnNext {
 	background-image: none!important;
 }
+#lightbox-image-details-currentNumber {
+  display: none!important;
+}
 #list li{
 	float: left;
 	width: 180px;
