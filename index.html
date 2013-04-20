@@ -20,6 +20,12 @@
 <script type="text/javascript" src="js/expander.js"></script>
 <script type="text/javascript" src="js/jquery.lightbox.js"></script>
 <script type="text/javascript" src="js/top.js"></script>
+<script>
+$(function(){
+	$('.tour a').lightBox({fixedNavigation:true});
+})
+</script>
+
 </head>
 <body>
 
@@ -36,9 +42,14 @@
 
         <?php require("./module/lead_block_default.html"); ?>
         
-        <!---->
+        
+        <div id="emergency" class="mb10 tour">
+        	<a href="images/banner_tour_pop.jpg"><img src="images/banner_tour.jpg" /></a>
+        </div> 
+        
+        
         <div id="emergency" class="mb10">
-        	<img src="images/bnr_zephry_20130312.jpg" />
+        	<img src="images/banner_goldenweek.jpg" />
         </div> 
         
         <?php require("./module/ticker.html"); ?>
