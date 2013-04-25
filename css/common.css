@@ -267,7 +267,6 @@ hr {
     background: #000;
     border: 1px solid #51504b;
     width:300px;
-    padding:30px;
     display:none;
 }
 #menu li {
@@ -305,14 +304,19 @@ hr {
   height: 100%
 }
 #menu li div li {
-  float: left;
-  margin-right: 30px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  border-bottom: 1px solid #757575;
 }
 
 #menu ul a {
+  text-align: center;
   height: auto;
+  padding: 10px 0;
   line-height: 1;
-  font-size: 14px;
+  font-size: 12px;
   display: block;
   white-space: nowrap;
   float: none;
@@ -320,15 +324,14 @@ hr {
   text-transform: none; }
 
 #menu ul a:hover {
-  color: #bebebe;
-  text-decoration: underline
+  background: #212121;
 }
 
 #menu li div p {
   line-height: 1.5;
   position: static!important;
   font-size: 12px!important;
-  margin-top: 10px;
+  padding: 20px;
 }
 
 /* Clear floated elements */
